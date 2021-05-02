@@ -1,0 +1,79 @@
+<div class="container-fluid bg-danger">
+<li>
+  <div class="row">
+    <div class="col-xs-2 col-xs-offset-4">
+        <label>Sole de depart :</label>
+       <input id = "soldBegin" type="number" class="form-control" [(ngModel)]="soldBegin"/>
+    </div>
+    <div class="col-xs-2 ">
+      <label>Sole de depart saisi</label>
+      <input type="number" class="form-control" name="soldBegin" value="{{soldBegin}}" disabled>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-2 col-xs-offset-4">
+        <label>Encaisse Banque :</label>
+        <input type="number" class="form-control" [(ngModel)]="encaisseBk">
+    </div>
+    <div class="col-xs-2">
+      <label>Encaisse Banque Saisi</label>
+      <input id = "encaisseBk" type="number" class="form-control" value="{{encaisseBk}}" disabled>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-2 col-xs-offset-4">
+      <label>In National :</label>
+      <input type="number" class="form-control" [(ngModel)]="inNat">
+    </div>
+    <div class="col-xs-2">
+      <label>Out NAtional</label>
+      <input type="number" class="form-control"  [(ngModel)]="outNat">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-2 col-xs-offset-4">
+      <label>Frais :</label>
+      <input type="number" class="form-control" [(ngModel)]="frais">
+    </div>
+    <div class="col-xs-2">
+      <label>Out International</label>
+      <input type="number" class="form-control"  [(ngModel)]="outInter">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-2 col-xs-offset-4">
+      <label>Fawatir :</label>
+      <input type="number" class="form-control" [(ngModel)]="fawatir">
+    </div>
+    <div class="col-xs-2">
+      <label>Annulation :</label>
+      <input type="number" class="form-control" [(ngModel)]="annulation" >
+    </div>
+
+  </div>
+  <div class="row">
+    <div class="col-xs-2 col-xs-offset-4">
+      <label>In International :</label>
+      <input type="number" class="form-control" [(ngModel)]="inIntern">
+    </div>
+
+  </div>
+  <div class="row">
+    <div class="col-xs-2 col-xs-offset-4">
+     <label >Calculer résultat :</label>
+     <button class="btn-primary" (click)="onSave()">Résultat</button>
+    </div>
+      <div class="col-xs-2">
+        <input type="submit" class="form-control" id="resultTotal" value="{{resultTotal}}">
+      </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-2 col-xs-offset-4">
+      <label >Reset :</label>
+      <button class="btn-primary" (click)="reset()">Reset</button>
+    </div>
+  </div>
+</li>
+</div>

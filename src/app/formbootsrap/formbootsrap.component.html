@@ -1,0 +1,128 @@
+<div class="container-fluid bg-info bg">
+
+<div class="row col-xs-8 col-xs-offset-4">
+  <td colspan="1">
+    <form class="well form-horizontal">
+      <fieldset>
+        <div class="form-group">
+          <label class="col-md-4 control-label">Sole depart :</label>
+          <div class="col-md-8 inputGroupContainer">
+            <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+              <input id="soldBegin" name="soldBegin" placeholder="Solde Depart" class="form-control" required="true" value="" type="number" [(ngModel)]="soldBegin"><span class="input-group-addon"><i class="glyphicon glyphicon-eur"></i></span></div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-4 control-label">Banque</label>
+          <div class="col-md-8 inputGroupContainer">
+            <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-eur"></i></span>
+              <input id="encaisseBk" name="encaisseBk" placeholder="Banque" class="form-control" required="true" value="" type="number" [(ngModel)]="encaisseBk"></div>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </td>
+</div>
+
+<div class="row">
+
+<div class="container">
+  <table class="table table-striped">
+    <tbody>
+    <tr>
+      <td colspan="1">
+        <form class="well form-horizontal">
+          <fieldset>
+            <div class="form-group">
+              <label class="col-md-4 control-label">In National</label>
+              <div class="col-md-8 inputGroupContainer">
+                <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-eur"></i></span>
+                  <input id="inNat" name="inNat" placeholder="Int National" class="form-control" required="true" value="" type="number" [(ngModel)]="inNat"></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-md-4 control-label">Fawatir</label>
+              <div class="col-md-8 inputGroupContainer">
+                <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-eur"></i></span>
+                  <input id="fawatir" name="fawatir" placeholder="Fawatir" class="form-control" required="true" value="" type="number" [(ngModel)]="fawatir"></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-md-4 control-label">Frais</label>
+              <div class="col-md-8 inputGroupContainer">
+                <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-eur"></i></span>
+                  <input id="frais" name="frais" placeholder="Frais" class="form-control" required="true" value="" type="number" [(ngModel)]="frais"></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-md-4 control-label">In International</label>
+              <div class="col-md-8 inputGroupContainer">
+                <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-eur"></i></span>
+                  <input id="inIntern" name="inIntern" placeholder="In International" class="form-control" required="true" value="" type="number" [(ngModel)]="inIntern"></div>
+              </div>
+            </div>
+
+          </fieldset>
+        </form>
+      </td>
+      <td colspan="1">
+        <form class="well form-horizontal">
+          <fieldset>
+
+            <div class="form-group">
+              <label class="col-md-4 control-label">Out National</label>
+              <div class="col-md-8 inputGroupContainer">
+                <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-eur"></i></span>
+                  <input id="outNat" name="outNat" placeholder="Out National" class="form-control" required="true" value="" type="number" [(ngModel)]="outNat"></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-md-4 control-label">Out International</label>
+              <div class="col-md-8 inputGroupContainer">
+                <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-eur"></i></span>
+                  <input id="outInter" name="outInter" placeholder="Out International" class="form-control" required="true" value="" type="number" [(ngModel)]="outInter"></div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="col-md-4 control-label">Annulation</label>
+              <div class="col-md-8 inputGroupContainer">
+                <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-eur"></i></span>
+                  <input id="annulation" name="annulation" placeholder="Annulation" class="form-control" required="true" value="" type="number" [(ngModel)]="annulation"></div>
+              </div>
+            </div>
+
+          </fieldset>
+        </form>
+      </td>
+
+
+    </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+
+<div class="row col-xs-8 col-xs-offset-4">
+  <td colspan="1">
+    <form class="well form-horizontal">
+      <fieldset>
+        <div class="form-group">
+          <div class="col-md-4 inputGroupContainer">
+            <button class="form-control btn-primary" (click)="onSave()">Résultat</button>
+          </div>
+          <div class="col-md-8 inputGroupContainer">
+            <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-eur"></i></span>
+              <input id="resultTotal" name="resultTotal" placeholder="Résultat" class="form-control" required="true" type="number" value="{{resultTotal}}"></div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-md-4 inputGroupContainer">
+            <button class="form-control btn-danger" (click)="reset()">Reset</button>
+          </div>
+        </div>
+
+      </fieldset>
+    </form>
+  </td>
+</div>
+</div>
